@@ -1,0 +1,52 @@
+import java.io.*;
+import java.util.Random;
+public class Abcd{
+<<<<<<< HEAD
+	public static void main(String args[])throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int lotto[][]; // 로또 저장할 배열공간 선언
+		
+		System.out.print("\t몇 게임을 하실꺼에요 ? ");
+		
+		int number = Integer.parseInt(br.readLine());
+		
+		lotto = new int[number][6]; //2차원 배열 초기화
+		
+		for(int i=0; i<number; i++){//내가 선택 게임수 만큼
+			
+			for(int j=0; j<lotto[i].length; j++){
+				
+				lotto[i][j] = (int)(Math.random()*45 ) + 1;
+				
+				for(int k=0; k<j; k++){
+				
+					if(lotto[i][j] == lotto[i][k]){
+		j = j-1;
+		break;
+										}
+							}
+					}
+// 여기에 알맞은 코드를 추가해 주세요.
+				}
+		}
+=======
+	public static void main(String[] ar)throws IOException{
+	int i = 1; int j = 0;
+ switch(i){
+ case 2 : j+=6;
+ case 4 : j+=1;
+ default : j+=2;
+ //실행 -> i = 1 j = 2
+ case 0 : j+=4; // Switch는 default 이하의 구문을 break없을시에 다 실행한다 => i = 1, j = 6
+ }
+ System.out.println("i :" + i + "j :" + j );
+	}
+>>>>>>> origin
+}
+
+
+
+/*
+	-214748364~214748364
+*/
