@@ -1,0 +1,10 @@
+public class MyTest{
+private static int a =1;
+public static void main(String[] ar){
+modify(a);
+System.out.println(modify(a));
+}
+public static int modify(int a){
+return a++;
+}
+}
